@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "type": "tetra:basic_module",
+  "slots": [
+    "single/binding"
+  ],
+  "renderLayer": "higher",
+  "variants": [
+    {
+      "key": "single_socket/infernal",
+      "category": "misc",
+      "durability": 800,
+      "durabilityMultiplier": 1,
+      "integrity": -1,
+      "glyph": {
+        "tints": {
+          "glyph": "f37710"
+        },
+        "textureX": 80,
+        "textureY": 16
+      },
+      "models": [{
+        "location": "tetra:items/module/single/binding/socket/thermal"
+      }],
+      "effects": {
+        "secrets_of_forging_revelations:infernal": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "type": "tetra:basic_module",
+  "slots": [ "sword/guard" ],
+  "renderLayer": "higher",
+  "variants": [
+    {
+      "key": "sword_socket/infernal",
+      "category": "misc",
+      "durability": 800,
+      "durabilityMultiplier": 1,
+      "integrity": -1,
+      "glyph": {
+        "tints": {
+          "glyph": "f37710"
+        },
+        "textureX": 80,
+        "textureY": 16
+      },
+      "models": [{
+        "location": "tetra:items/module/sword/guard/socket/thermal"
+      }],
+      "effects": {
+        "secrets_of_forging_revelations:infernal": 5
+      }
+    }
+  ]
+}

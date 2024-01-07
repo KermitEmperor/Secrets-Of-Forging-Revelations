@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "slots": [ "sword/guard" ],
+  "materialSlotCount": 1,
+  "displayType": "minor",
+  "glyph": {
+    "textureX": 80,
+    "textureY": 16
+  },
+  "outcomes": [
+    {
+      "material": {
+        "items": [ "minecraft:blaze_powder" ]
+      },
+      "experienceCost": 5,
+      "moduleKey": "sword/socket",
+      "moduleVariant": "sword_socket/infernal"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "slots": [ "double/binding" ],
+  "materialSlotCount": 1,
+  "displayType": "minor",
+  "glyph": {
+    "textureX": 80,
+    "textureY": 16
+  },
+  "outcomes": [
+    {
+      "material": {
+        "items": [ "minecraft:blaze_powder" ]
+      },
+      "experienceCost": 5,
+      "moduleKey": "double/socket",
+      "moduleVariant": "double_socket/infernal"
+    }
+  ]
+}

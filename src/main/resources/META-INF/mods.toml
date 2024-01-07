@@ -53,3 +53,15 @@ description='''${mod_description}'''
    versionRange="${minecraft_version_range}"
    ordering="NONE"
    side="BOTH"
+[[dependencies.secrets_of_forging_revelations]]
+   modId="tetra"
+   mandatory=true
+   versionRange="[4.10,)"
+   ordering="AFTER"
+   side="BOTH"
+[[dependencies.secrets_of_forging_revelations]]
+   modId="mutil"
+   mandatory=true
+   versionRange="[4.4,)"
+   ordering="AFTER"
+   side="BOTH"

@@ -20,9 +20,9 @@ public abstract class ThrownModularItemRendererMixin {
 
 
 
-    @Inject(method = "render(Lse/mickelus/tetra/items/modular/ThrownModularItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V", at=@At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/entity/ItemRenderer;renderStatic(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;IILcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"), remap = false)
+    @Inject(method = "render(Lse/mickelus/tetra/items/modular/ThrownModularItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V", at=@At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/entity/ItemRenderer;renderStatic(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;IILcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"))
     private void onRender(ThrownModularItemEntity entity, float entityYaw, float partialTicks, PoseStack matrixStack, MultiBufferSource renderTypeBuffer, int packedLightIn, CallbackInfo ci) {
-        Item item = ((ThrownModularItemEntityInvoker) entity).invokeGetPickupItem().getItem();
+        Item item = ((ThrownModularItemEntityInvoker) entity).getStack().getItem();
         if (item instanceof ModularPolearm) {
             this.transformPolearm(entity, partialTicks, matrixStack);
         }
